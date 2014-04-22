@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chaoqun.firstsocial"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+
+    <application
+        android:name="com.chaoqun.firstsocial.FirstSocialApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chaoqun.firstsocial.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chaoqun.firstsocial.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name="com.chaoqun.firstsocial.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName="com.chaoqun.firstsocial.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chaoqun.firstsocial.ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:parentActivityName="com.chaoqun.firstsocial.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chaoqun.firstsocial.EditFriendsActivity"
+            android:label="@string/title_activity_edit_friends"
+            android:parentActivityName="com.chaoqun.firstsocial.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chaoqun.firstsocial.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.chaoqun.firstsocial.FriendDetailActivity"
+            android:label="@string/title_activity_friends_detail"
+            android:parentActivityName="com.chaoqun.firstsocial.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chaoqun.firstsocial.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.chaoqun.firstsocial.RecipientsActivity"
+            android:label="@string/title_activity_recipients"
+            android:parentActivityName="com.chaoqun.firstsocial.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chaoqun.firstsocial.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.chaoqun.firstsocial.ViewImageActivity"
+            android:label="@string/title_activity_view_image"
+            android:parentActivityName="com.chaoqun.firstsocial.MainActivity" android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chaoqun.firstsocial.MainActivity" />
+        </activity>
+        
+        <activity android:name="com.facebook.LoginActivity"
+                  android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+    </application>
+
+</manifest>

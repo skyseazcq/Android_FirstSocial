@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <ImageView
+        android:id="@+id/messageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/message_list_item_vertical_margin"
+        android:paddingBottom="@dimen/message_list_item_vertical_margin"/>
+ 
+    <TextView
+        android:id="@+id/senderLabel"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@+id/messageIcon"
+        android:textColor="#3399FF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:gravity="center_vertical"
+        android:layout_alignWithParentIfMissing="true"
+         />
+ 
+    <TextView
+        android:id="@+id/sendTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/senderLabel"
+        android:layout_toRightOf="@+id/messageIcon"
+        android:paddingLeft="@dimen/activity_horizontal_margin_time"
+        android:textAppearance="?android:attr/text"/>
+    
+	<!--  
+	android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:layout_height="wrap_content"
+    -->
+    <!--  
+    <ImageView
+        android:id="@+id/messageIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/message_list_item_vertical_margin"
+        android:paddingBottom="@dimen/message_list_item_vertical_margin"
+        android:src="@drawable/ic_action_picture" />
+
+        
+    <TextView
+        android:id = "@+id/sendTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/messageIcon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+         />
+    
+	<TextView
+        android:id="@+id/senderLabel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/messageIcon"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingLeft="@dimen/activity_horizontal_margin" 
+        
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/sendTime"/>
+-->
+</RelativeLayout>
